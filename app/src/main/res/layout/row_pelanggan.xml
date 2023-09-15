@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/pelangganNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Pelanggan"
+                android:maxLines="1"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/pelangganNik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3506061102010001"
+                android:layout_marginTop="2dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/underline"
+                android:layout_marginTop="8dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                android:layout_marginHorizontal="12dp"
+                app:cardElevation="0dp">
+
+                <Button
+                    android:id="@+id/btnKtpPelanggan"
+                    android:layout_width="150dp"
+                    android:layout_height="42dp"
+                    android:text="KTP"
+                    android:drawableLeft="@drawable/card"
+                    android:drawableTint="@color/white" />
+
+                <Button
+                    android:id="@+id/btnHapusPelanggan"
+                    android:layout_width="150dp"
+                    android:layout_height="42dp"
+                    android:text="Hapus"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"
+                    android:backgroundTint="#EF5350"
+                    android:drawableLeft="@drawable/delete"
+                    android:drawableTint="@color/white" />
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

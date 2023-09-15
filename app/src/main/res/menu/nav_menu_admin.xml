@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homeAdmin"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:title="Users"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_pelangganAdmin"
+                android:icon="@drawable/pelanggan"
+                android:title="Pelanggan"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Drvier"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_sopirAdmin"
+                android:icon="@drawable/sopir"
+                android:title="Sopir"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Utama"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_kategoriAdmin"
+                android:icon="@drawable/kategori"
+                android:title="Kategori Mobil"/>
+
+            <item
+                android:id="@+id/nav_mobilAdmin"
+                android:icon="@drawable/mobil"
+                android:title="Mobil"/>
+
+            <item
+                android:id="@+id/nav_rentalAdmin"
+                android:icon="@drawable/rental"
+                android:title="Rental"/>
+
+            <item
+                android:id="@+id/nav_laporanAdmin"
+                android:icon="@drawable/riwayat"
+                android:title="Laporan"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Lainnya"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nav_logoutAdmin"
+                android:icon="@drawable/logout"
+                android:title="Keluar Aplikasi"/>
+        </menu>
+    </item>
+
+</menu>

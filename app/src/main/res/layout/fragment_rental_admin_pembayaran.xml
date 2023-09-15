@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Pembayaran"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Kirim Bukti Pembayaran"/>
+
+    <ImageView
+        android:id="@+id/insFoto"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/image"
+        android:background="#000000"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:text="Choose File"
+        app:cornerRadius="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:backgroundTint="#878787"/>
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="Kirim Bukti Pembayaran!"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/right"
+        android:drawableTint="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

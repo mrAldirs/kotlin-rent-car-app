@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Mobil Kembali"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/insWaktuDenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Waktu Denda berapa jam"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/insBiayaDenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Denda per jam (dalam Rupiah)"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="Hitung Denda"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_200"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/insTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Denda"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="Konfirmasi Sekarang!"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/right"
+        android:drawableTint="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

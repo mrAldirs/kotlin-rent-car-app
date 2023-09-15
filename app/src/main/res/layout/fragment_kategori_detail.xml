@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_gravity="end"
+        android:backgroundTint="#00FFFFFF"
+        app:tint="@color/black"/>
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Detail Kategori"
+        android:layout_marginStart="8dp"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/detailKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Kategori"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi : "
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/detailDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deksripsi kategori"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/underline"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnEditMobil"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Edit Kategori"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/edit"
+        android:drawableTint="@color/white"
+        android:backgroundTint="@color/purple_200"
+        android:layout_marginHorizontal="16dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

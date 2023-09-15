@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="16dp">
+
+    <ImageView
+        android:id="@+id/profilHeader"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/usernameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Wijaya Rental Mobil"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="#555555"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/subHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>

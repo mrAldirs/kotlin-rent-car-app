@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Login Admin"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:strokeWidth="1dp"
+        app:strokeColor="#7F7F7F">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/email"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginHorizontal="8dp"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:strokeWidth="1dp"
+        app:strokeColor="#7F7F7F">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/password"
+            android:drawableTint="@color/purple_500"
+            android:layout_marginHorizontal="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

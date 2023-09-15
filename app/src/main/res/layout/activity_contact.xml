@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        app:cardBackgroundColor="@color/purple_500"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="16dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/purple_700">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kami senang mendengar dari Anda! Jika Anda memiliki pertanyaan, saran, atau masukan seputar layanan kami, jangan ragu untuk menghubungi kami melalui informasi kontak di bawah ini. Tim kami siap membantu dan merespons dengan cepat."
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/telpon"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/email"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/email"
+                android:drawableTint="@color/white"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/alamat"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/location"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/norek"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/card"
+                android:drawableTint="@color/white"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kami berkomitmen untuk memberikan pelayanan terbaik kepada pelanggan kami, dan kami sangat menghargai umpan balik yang Anda berikan. Jangan ragu untuk menghubungi kami, dan kami akan dengan senang hati menjawab pertanyaan Anda dan membantu memenuhi kebutuhan Anda."
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

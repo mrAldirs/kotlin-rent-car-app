@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btnKonfirmasiRental"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/detailStatusRental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Selesai"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/detailCreated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:text="0000-00-00 00:00:00"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEDED"
+                android:drawableStart="@drawable/pelanggan"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/purple_500"
+                android:paddingVertical="8dp"
+                android:paddingStart="24dp"
+                android:text="Pelanggan"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:cardBackgroundColor="#EDEDED"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/detailFotoPelanggan"
+                    android:layout_width="64dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="12dp"
+                    android:background="#000000"
+                    android:src="@drawable/image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="90dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detailPelanggan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Nama Pelanggan"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailNoHpPelanggan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor Handphone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#EDEDED"
+                android:drawableStart="@drawable/mobil"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/purple_500"
+                android:paddingVertical="8dp"
+                android:paddingStart="24dp"
+                android:text="Mobil"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:cardBackgroundColor="#EDEDED"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/detailFotoMobil"
+                    android:layout_width="64dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="12dp"
+                    android:background="#000000"
+                    android:src="@drawable/image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="90dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detailMobil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Nama Mobil"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailKategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kategori" />
+
+                    <TextView
+                        android:id="@+id/detailHarga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harga"
+                        android:textColor="@color/purple_700"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvSopir"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#EDEDED"
+                android:drawableStart="@drawable/sopir"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/purple_500"
+                android:paddingVertical="8dp"
+                android:paddingStart="24dp"
+                android:text="Sopir"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSopir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                app:cardBackgroundColor="#EDEDED"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/detailFotoSopir"
+                    android:layout_width="64dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="12dp"
+                    android:background="#000000"
+                    android:src="@drawable/user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="90dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detailSopir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Nama Sopir"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailHpSopir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Hp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/rental"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/purple_500"
+                android:paddingVertical="8dp"
+                android:paddingStart="24dp"
+                android:text="Rental"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@color/underline" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Tanggal Rental" />
+
+                <TextView
+                    android:id="@+id/detailTgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="Tanggal Rental"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Mulai Berjalan" />
+
+                <TextView
+                    android:id="@+id/detailTglMulai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="Tanggal Mulai"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Selesai" />
+
+                <TextView
+                    android:id="@+id/detailTglSelesai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="Tanggal Selesai"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Hari" />
+
+                <TextView
+                    android:id="@+id/detailHari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="1 Hari"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdHrgaSopir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Biaya Sopir" />
+
+                <TextView
+                    android:id="@+id/detailHargaSopir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="Rp.000000"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Harga Rental" />
+
+                <TextView
+                    android:id="@+id/detailHargaRental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="Rp.000000"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/fab_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                app:backgroundTint="@color/purple_500"
+                android:text="Preview PDF"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Total Pembayaran" />
+
+                <TextView
+                    android:id="@+id/detailTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="Rp.300000"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/bayar"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/purple_500"
+                android:paddingVertical="8dp"
+                android:paddingStart="24dp"
+                android:text="Pembayaran"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@color/underline" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Status Pembayaran" />
+
+                <TextView
+                    android:id="@+id/detailStatusBayar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="Status Pembayaran"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/detailKunci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:text="Kunci Mobil Bisa Diambil"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/btnDetailPembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Lihat Detail Pembayaran .."
+                android:textColor="#0D27B6"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnKonfirmasiRental"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Bayar Booking Sekarang"
+        android:layout_marginHorizontal="12dp"
+        android:backgroundTint="@color/teal_200"
+        android:textAllCaps="false"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/right"
+        android:drawableTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/btnBatalkanRental"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btnBatalkanRental"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Batalkan Booking"
+        android:layout_marginHorizontal="12dp"
+        android:backgroundTint="#EC6666"
+        android:textAllCaps="false"
+        android:layout_marginBottom="4dp"
+        android:drawableLeft="@drawable/left"
+        android:drawableTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/riwayatMobil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Merek Mobil"
+                android:maxLines="1"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/riwayatTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Total"
+                android:layout_marginTop="2dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/riwayatTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000-00-00"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:id="@+id/riwayatStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="2dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/underline"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnBatalkanRental"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="12dp"
+                android:text="Batalkan"
+                android:textAllCaps="false"
+                android:layout_gravity="end"
+                android:backgroundTint="#EF5350"
+                android:drawableLeft="@drawable/delete"
+                android:drawableTint="@color/white" />
+
+            <Button
+                android:id="@+id/btnDetailRiwayat"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Detail Rental Mobil"
+                android:layout_marginHorizontal="12dp"
+                android:backgroundTint="@color/teal_200"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/info"
+                android:drawableTint="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

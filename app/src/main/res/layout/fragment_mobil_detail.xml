@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Detail Mobil"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/detailFoto"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/image"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/detailMobil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Mobil"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/detailKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/detailMerk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merk Mobil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/detailStnk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stnk Mobil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/detailPlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plat Mobil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/detailTahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahun Mobil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/detailHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        android:textColor="@color/purple_700"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/detailStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:textStyle="italic"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline"
+        android:layout_marginHorizontal="56dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="detail mobil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/detailKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="detail keterangan mobil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/detailCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00 00:00:00"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/detailUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00 00:00:00"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@color/underline"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Edit Detail Mobil"
+        android:textAllCaps="false"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/edit"
+        android:drawableTint="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginHorizontal="16dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

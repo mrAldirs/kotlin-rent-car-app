@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">rental_mobil</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="pembayaran">"Silahkan melakukan pembayaran dengan melakukan transfer ke No rekening Bank BRI berikut ini:\n
+    626501000303507 an Krisna"</string>
+    <string name="telpon">Telepon: 08176096507</string>
+    <string name="alamat">Alamat: Jl. Kh. Hasyim Asyari, RT/RW 001/009 Ds. Banjarmlati, Kec. Mojoroto, Kediri</string>
+    <string name="email">Email: Wijayarentalcars@gmail.com</string>
+    <string name="norek">No Rek : BRI 626501000303507 an Krisna</string>
+    <string name="about">Wijaya Rental Car adalah penyedia layanan sewa mobil yang berfokus pada memberikan pengalaman berkendara yang nyaman dan aman bagi pelanggan. Dengan berbagai jenis mobil yang tersedia, Wijaya Rental Car menyediakan opsi yang sesuai dengan kebutuhan dan preferensi pelanggan.
+\n\n
+Visi kami adalah menjadi mitra terpercaya dalam perjalanan pelanggan dengan memberikan layanan terbaik dan pengalaman yang memuaskan. Kami berkomitmen untuk menjaga keandalan, kebersihan, dan kualitas kendaraan kami agar pelanggan merasa puas dan percaya pada layanan kami.
+\n\n
+Keamanan adalah prioritas utama kami. Setiap mobil dalam flotilla Wijaya Rental Car menjalani pemeriksaan berkala dan pemeliharaan rutin untuk memastikan kondisi optimal dan keselamatan pelanggan.
+\n\n
+Kami mengundang Anda untuk menjelajahi aplikasi kami, melihat berbagai pilihan mobil yang tersedia, membaca ulasan pelanggan, dan memesan mobil dengan mudah. Bersama Wijaya Rental Car, nikmati perjalanan Anda dengan nyaman, bebas khawatir, dan penuh kegembiraan.</string>
+</resources>

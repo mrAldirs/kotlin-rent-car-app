@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rental_mobil">
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity
+            android:name=".OCRActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Pelanggan.PdfActivity"
+            android:screenOrientation="portrait"
+            android:label="Preview Pdf"
+            />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpSelesaiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.PelangganActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.PelangganDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.SopirActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.SopirDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.KategoriActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Admin.Mobil.MobilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.SopirEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.SopirTambahActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Admin.Mobil.MobilTambahActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Admin.Mobil.MobilEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.RentalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.RentalBookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.RentalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.RentalBerjalanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.RentalRiwayatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.LaporanActivity"
+            android:screenOrientation="portrait" /> <!-- Pelanggan -->
+        <activity
+            android:name=".Pelanggan.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pelanggan.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pelanggan.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pelanggan.BookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pelanggan.BookingKonfirmasiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pelanggan.MobilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Pelanggan.RiwayatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Pelanggan.RiwayatDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Pelanggan.ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Pelanggan.ProfilEditActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

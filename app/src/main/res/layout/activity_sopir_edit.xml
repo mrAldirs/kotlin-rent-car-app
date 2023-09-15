@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/purple_500"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSimpan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="@color/purple_500"
+            app:cardCornerRadius="24dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:cardBackgroundColor="#00FFFFFF"
+                        app:cardElevation="0dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/editImage"
+                            android:layout_width="150dp"
+                            android:layout_height="140dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/white"
+                            android:src="@drawable/image" />
+
+                        <com.getbase.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btnImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/edit"
+                            android:tint="@color/white"
+                            android:backgroundTint="@color/teal_200"
+                            android:layout_gravity="end|bottom"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/white" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeOverlay.Material3.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginHorizontal="16dp"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edNama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nama Sopir"
+                            android:background="@color/white"
+                            android:textSize="12sp"
+                            android:inputType="textPersonName"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeOverlay.Material3.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginHorizontal="16dp"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edEmaik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:background="@color/white"
+                            android:textSize="12sp"
+                            android:inputType="textEmailAddress"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeOverlay.Material3.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginHorizontal="16dp"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edHp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nomor Handphone"
+                            android:background="@color/white"
+                            android:textSize="12sp"
+                            android:inputType="phone"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#00FFFFFF"
+                        app:cardElevation="0dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/ThemeOverlay.Material3.TextInputEditText"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginHorizontal="16dp"
+                            app:endIconMode="clear_text">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edTempat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Tempat Lahir"
+                                android:background="@color/white"
+                                android:textSize="12sp"
+                                android:inputType="text"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/ThemeOverlay.Material3.TextInputEditText"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_gravity="end"
+                            app:endIconMode="clear_text">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edTanggal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Tanggal Lahir"
+                                android:background="@color/white"
+                                android:textSize="12sp"
+                                android:focusable="false"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeOverlay.Material3.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginHorizontal="16dp"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edAlamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Alamat Rumah"
+                            android:background="@color/white"
+                            android:textSize="12sp"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:lines="3"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/editImageKtp"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/black"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/white"
+                        android:src="@drawable/image" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeOverlay.Material3.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginHorizontal="16dp"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edNik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="NIK (Nomor Induk Keluarga)"
+                            android:background="@color/white"
+                            android:textColor="@color/black"
+                            android:enabled="false"
+                            android:textSize="12sp"
+                            android:inputType="number"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/editImageSim"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/black"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/white"
+                        android:src="@drawable/image" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeOverlay.Material3.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginHorizontal="16dp"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edSim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nomor SIM"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:textSize="12sp"
+                            android:inputType="number"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="24dp"
+        android:backgroundTint="@color/teal_200"
+        android:drawableLeft="@android:drawable/stat_sys_upload"
+        android:drawableTint="@color/white"
+        android:text="Simpan Perubahan"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
